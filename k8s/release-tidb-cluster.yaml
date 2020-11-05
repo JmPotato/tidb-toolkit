@@ -59,7 +59,7 @@ spec:
 
   tidb:
     baseImage: hub.pingcap.net/pingcap/tidb
-    version: release-4.0
+    version: 09c941f
     replicas: 1
     maxFailoverCount: 0
     enableAdvertiseAddress: true
