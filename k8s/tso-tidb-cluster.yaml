@@ -9,8 +9,8 @@ spec:
   pvReclaimPolicy: Delete
   enableAdvertiseAddress: true
   autoFailover: false
-  configUpdateStrategy: RollingUpdate
   hostNetwork: true
+  configUpdateStrategy: RollingUpdate
   pd:
     baseImage: hub.pingcap.net/jmpotato/pd
     version: latest_tso-3530556
@@ -59,8 +59,8 @@ spec:
         hibernate-regions: false
 
   tidb:
-    baseImage: hub.pingcap.net/pingcap/tidb
-    version: 09c941f
+    baseImage: hub.pingcap.net/csn/tidb
+    version: master-6ccd824
     replicas: 1
     maxFailoverCount: 0
     enableAdvertiseAddress: true
