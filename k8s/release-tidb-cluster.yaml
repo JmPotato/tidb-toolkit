@@ -9,7 +9,8 @@ spec:
   pvReclaimPolicy: Delete
   enableAdvertiseAddress: true
   autoFailover: false
-  configUpdateStrategy: RollingUpdate 
+  configUpdateStrategy: RollingUpdate
+  hostNetwork: true
   pd:
     baseImage: hub.pingcap.net/pingcap/pd
     version: 775b6a5
